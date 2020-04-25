@@ -19,6 +19,12 @@ inoremap jj <Esc>
 inoremap jk <Esc>
 inoremap jw <Esc>:w<cr>
 
+inoremap jo <Esc>o
+inoremap jO <Esc>O
+
+inoremap jl <Esc>la
+inoremap jL <Esc>$a
+
 nnoremap Y y$
 
 vnoremap <C-c> "+y

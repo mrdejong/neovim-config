@@ -1,6 +1,6 @@
 let g:fzf_layout = { 'window': 'call FloatingFZF()' }
 
-nnoremap <silent><C-p> :Files<cr>
+nnoremap <silent><C-p> :GFiles<cr>
 nnoremap <silent><leader>b :Buffers<cr>
 nnoremap <silent><leader>t :BTags<cr>
 nnoremap <silent><leader>m :History<cr>

@@ -29,6 +29,10 @@ function! s:packager_init() abort
   call packager#add('gruvbox-community/gruvbox')
   call packager#add('vim-airline/vim-airline')
   call packager#add('vim-airline/vim-airline-themes')
+  call packager#add('sodapopcan/vim-twiggy')
+  call packager#add('mattn/emmet-vim')
+  call packager#add('jszakmeister/vim-togglecursor')
+  call packager#add('ElmCast/elm-vim')
 endfunction
 
 command! -nargs=0 PackagerInstall call s:packager_init() | call packager#install()

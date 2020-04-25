@@ -10,7 +10,7 @@ set mouse=a
 set showmatch
 set nostartofline
 set timeoutlen=1000 ttimeoutlen=0
-set fileencoding=utf-8
+" set fileencoding=utf-8
 set wrap
 set linebreak
 set listchars=tab:>\ ,trail:·
