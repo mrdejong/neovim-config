@@ -46,3 +46,10 @@ set wildignore=*.o,*.obj,*~
 set wildignore+=*.git*
 set wildignore+=*vim/backups*
 set wildignore+=*node_modules*
+
+" COC Explorer
+nmap <leader>n :CocCommand explorer<cr>
+nmap <leader>f :CocCommand explorer<cr>
+" nmap <leader>f :CocCommand explorer --preset floating<cr>
+autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'coc-explorer') | q | endif
+
