@@ -12,10 +12,7 @@ function! s:packager_init() abort
   call packager#add('tpope/vim-commentary')
   call packager#add('tpope/vim-surround')
   call packager#add('tpope/vim-repeat')
-  call packager#add('tpope/vim-fugitive')
-  call packager#add('airblade/vim-gitgutter')
   call packager#add('editorconfig/editorconfig-vim')
-  call packager#add('airblade/vim-gitgutter')
   call packager#add('junegunn/fzf', { 'do': './install --all && ln -sf $(pwd) ~/.fzf'})
   call packager#add('junegunn/fzf.vim')
   call packager#add('ludovicchabant/vim-gutentags')
@@ -33,6 +30,10 @@ function! s:packager_init() abort
   call packager#add('mattn/emmet-vim')
   call packager#add('jszakmeister/vim-togglecursor')
   call packager#add('ElmCast/elm-vim')
+  call packager#add('mhinz/vim-signify')
+  call packager#add('tpope/vim-fugitive')
+  call packager#add('tpope/vim-rhubarb')
+  call packager#add('junegunn/gv.vim')
 endfunction
 
 command! -nargs=0 PackagerInstall call s:packager_init() | call packager#install()
