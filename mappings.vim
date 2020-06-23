@@ -10,6 +10,8 @@ inoremap jO <esc>O
 inoremap j; <esc>$a;<esc>
 inoremap j: <esc>$a;<esc>o
 
+inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<cr>\<c-r>=coc#on_enter()\<cr>"
+
 " Normal mappings
 nnoremap <leader>w :w<cr>
 nnoremap ; :
@@ -24,6 +26,8 @@ nnoremap <leader>f :CocCommand explorer<cr>
 
 nnoremap <silent><C-p> :Files<cr>
 nnoremap <silent><leader>b :Buffers<cr>
+
+autocmd! FileType coc-explorer nnoremap <buffer> gl <C-w>l
 
 " Visual mappings
 xmap ga <Plug>(EasyAlign)
