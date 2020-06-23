@@ -1,6 +1,5 @@
 call plug#begin('~/.vim/plugged')
 
-Plug 'itmammoth/doorboy.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'chriskempson/base16-vim'
