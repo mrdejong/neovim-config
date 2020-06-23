@@ -1,5 +1,10 @@
-nnoremap <silent><C-p> :GFiles<cr>
-nnoremap <silent><leader>b :Buffers<cr>
+set rtp+=~/.fzf
+
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
+
+command! -bang -nargs=* F call fzf#vim#grep(g:rg_command .shellescape(<q-args>), 1, <bang>0)
 
 function! s:goto_def(lines) abort
   silent! exe 'e +BTags'.a:lines[0]
