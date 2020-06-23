@@ -22,7 +22,7 @@ nnoremap gl <C-w>l
 nnoremap <leader>e :CocCommand explorer<cr>
 nnoremap <leader>f :CocCommand explorer<cr>
 
-nnoremap <silent><C-p> :GFiles<cr>
+nnoremap <silent><C-p> :Files<cr>
 nnoremap <silent><leader>b :Buffers<cr>
 
 " Visual mappings
