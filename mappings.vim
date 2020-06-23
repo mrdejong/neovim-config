@@ -22,6 +22,9 @@ nnoremap gl <C-w>l
 nnoremap <leader>e :CocCommand explorer<cr>
 nnoremap <leader>f :CocCommand explorer<cr>
 
+nnoremap <silent><C-p> :GFiles<cr>
+nnoremap <silent><leader>b :Buffers<cr>
+
 " Visual mappings
 xmap ga <Plug>(EasyAlign)
 
@@ -30,4 +33,6 @@ if has('nvim')
   tnoremap <Esc> <C-\><C-n>
   tnoremap <C-j> <C-\><C-n>
   tnoremap <C-v><Esc> <Esc>
+
+  autocmd! FileType fzf tnoremap <buffer> <esc> <c-c>
 endif
