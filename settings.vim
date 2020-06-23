@@ -48,6 +48,8 @@ set signcolumn=yes
 set cursorline
 set cursorcolumn
 
-set clipboard+=unnamedplus                                                      " Make sure that yank, also yanks to the clipboard
+set clipboard=unnamed,unnamedplus                                                      " Make sure that yank, also yanks to the clipboard
 
 set statusline=\%r%F\ \ \ \ \LINE:\ %l/%L/%P\ TIME:\ %{strftime('%c')}          " Statusline data, work in progress.
+
+syntax enable
