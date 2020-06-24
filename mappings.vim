@@ -10,7 +10,17 @@ inoremap jO <esc>O
 inoremap j; <esc>$a;<esc>
 inoremap j: <esc>$a;<esc>o
 
-inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<cr>\<c-r>=coc#on_enter()\<cr>"
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#refresh()
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+
+if exists('*complete_info')
+  inoremap <expr> <cr> complete_info()["selected"] != "-1" ? "\<C-y>" : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+else
+  inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+endif
 
 " Normal mappings
 nnoremap <leader>w :w<cr>
