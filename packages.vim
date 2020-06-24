@@ -10,5 +10,6 @@ Plug 'tpope/vim-commentary'
 Plug 'chrisbra/vim-diff-enhanced'
 Plug 'justinmk/vim-syntax-extra'
 Plug 'rust-lang/rust.vim'
+Plug 'jreybert/vimagit'
 
 call plug#end()
