@@ -10,9 +10,3 @@ let g:coc_global_extensions = [
       \ 'coc-rls',
       \ 'coc-rust-analyzer'
       \ ]
-
-function! s:check_back_space() abort
-  let col = col('.') - 1
-  return !col || getline('.')[col - 1] =~# '\s'
-endfunction
-

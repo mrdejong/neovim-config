@@ -1,4 +1,5 @@
 runtime! packages.vim
+runtime! functions.vim
 runtime! settings.vim
 runtime! mappings.vim
 runtime! coc.vim
