@@ -33,7 +33,6 @@ set fillchars+=vert:│                                                         
 set breakindent                                                                 "Preserve indent on line wrap
 set nofoldenable                                                                "Disable folding by default
 set colorcolumn=80                                                              "Highlight 80th column for easier wrapping
-set foldmethod=syntax                                                           "When folding enabled, use syntax method
 set diffopt+=vertical
 
 set smarttab
@@ -49,7 +48,5 @@ set cursorline
 set cursorcolumn
 
 set clipboard=unnamed,unnamedplus                                                      " Make sure that yank, also yanks to the clipboard
-
-set statusline=\%r%F\ \ \ \ \LINE:\ %l/%L/%P\ TIME:\ %{strftime('%c')}          " Statusline data, work in progress.
 
 syntax enable

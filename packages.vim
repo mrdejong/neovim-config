@@ -11,5 +11,8 @@ Plug 'chrisbra/vim-diff-enhanced'
 Plug 'justinmk/vim-syntax-extra'
 Plug 'rust-lang/rust.vim'
 Plug 'jreybert/vimagit'
+Plug 'julialang/julia-vim'
+Plug 'evidens/vim-twig'
+Plug 'christoomey/vim-tmux-navigator'
 
 call plug#end()

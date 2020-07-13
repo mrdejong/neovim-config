@@ -1,6 +1,6 @@
 {
   "elixir.pathToElixirLS": "~/.elixir-ls/rel/language_server.sh",
-  "emmet.includeLanguages": {"eelixir": "html"},
+  "emmet.includeLanguages": {"eelixir": "html", "htmldjango.twig": "html", "eruby": "html"},
   "explorer.width": 30,
   "explorer.icon.enableNerdfont": true,
   "explorer.previewAction.onHover": false,
