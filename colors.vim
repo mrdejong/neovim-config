@@ -11,7 +11,7 @@ if filereadable(s:config_file)
   else
     echoerr 'Bad background ' . s:config[1] . ' in ' . s:config_file
     " Give a error and set the default
-    s:default_colors()
+    call DefaultColorScheme()
   endif
 
   if filereadable(expand('~/.vim/plugged/base16-vim/colors/base16-' . s:config[0] . '.vim'))
@@ -19,15 +19,11 @@ if filereadable(s:config_file)
   else
     echoerr 'Bad scheme ' . s:config[0] . ' in ' . s:config_file
     " Give a error and set the default
-    s:default_colors()
+    call DefaultColorScheme()
   endif
 else
   " Will only be used when the file `$HOME/.config/base16` does not exist
-  s:default_colors()
+  call DefaultColorScheme()
 endif
 
-function! s:default_colors()
-  colorscheme base16-ia-dark
-  set background=dark
-endfunction
 

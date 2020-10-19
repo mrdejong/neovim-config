@@ -3,3 +3,8 @@ function CheckBackspace() abort
   return !col || getline('.')[col - 1] =~# '\s'
 
 endfunction
+
+function DefaultColorScheme()
+  colorscheme base16-ia-dark
+  set background=dark
+endfunction
